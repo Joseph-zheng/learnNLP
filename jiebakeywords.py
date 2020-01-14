@@ -12,6 +12,11 @@ data = open('test.txt', 'r',encoding='utf-8').read()
 
 # load stopwords
 stop_words = open('stop_words.txt', 'r',encoding='utf-8').read()
+# add stop words 用 stopwords.add()设置屏蔽显示的词语,可以添加多个
+# stopwords = set(STOPWORDS)
+# stopwords.add("aaaa")
+# stopwords.add("bb")
+# load stopwords
 
 # cut words 你可以用自己的词典 jieba.load_userdict("userdict.txt")
 # 也可以往jieba词库添加词jieba.add_word("知情同意")或者jieba.del_word("自定义")
